@@ -1,0 +1,51 @@
+Analyze the packets provided in lab and solve the questions using Wireshark
+
+• Once you have captured some packets or you have opened a previously saved capture file from wireshark, you can view the packets that are displayed in the packet list pane by simply clicking on a packet in the packet list pane, which will bring up the selected packet in the tree view and byte view panes.
+• You can then expand any part of the tree to view detailed information about each protocol in each packet. Clicking on an item in the tree will highlight the corresponding bytes in the byte view.
+• Display filters allow you to concentrate on the packets you are interested in while hiding the currently uninteresting ones.
+ They allow you to only display packets based on:
+•	Protocol
+•	The presence of a field
+•	The values of fields
+•	A comparison between fields
+•	Filtering on the TCP protocol” type tcp in the display filter toolbar. only 
+     packets containing the TCP protocol are now displayed, 
+ 
+•	Wireshark provides a display filter language that enables you to precisely control which packets are displayed. They can be used to check for the presence of a protocol or field, the value of a field, or even compare two fields to each other. These comparisons can be combined with logical operators, like "and" and "or", and parentheses into complex expressions.
+e.g.
+1.	IP address 192.168.0.1, use ip.addr==192.168.0.1.
+2.	tcp.port==80
+3.	http.request
+  
+•	The menu items of the “Packet List” pop-up menu
+•	Apply as Column---Use the selected protocol item to create a new column in the packet list.
+•	Apply as Filter--Change the current display filter based on the most recent packet list or packet details item selected, but don’t apply it. The first submenu item shows the filter and subsequent items show the different ways that the filter can be changed.
+•	Follow TCP Stream--Open a window that displays all the TCP segments captured that are on the same TCP connection as a selected packet.
+•	Protocol Preferences--Adjust the preferences for the selected protocol.
+•	matches, -- Does the protocol or text string match the given case-insensitive compatible regular expression
+
+
+What web server software is used by www.snopes.com?
+The domain name be found from host header so we will set host header column where we will see all domain name
+Open Wireshark  file  open  Asksnopes.pcapng
+Select any http  right click  Apply as Column
+ 
+select http file  right click  follow TCP Stream
+ 
+ About what cell phone problem is the client concerned? 
+Client talking about cell so we search for cell keyword in whole packets.
+frame.matches “(?i)cell
+ 
+In the first HTTP request cell keyword is in URL and it was about cell phone charging issue.
+According to Zillow, what instrument will Ryan learn to play? 
+frame.matches “(?i)zillow”
+ 
+Open file  Export Object  HTTP  save All  select the folder to save
+ 
+Open the folder  search for the file name zillow  open with browser
+ 
+How many web servers are running Apache? 
+http.response
+ 
+Select http  apply as column
+http.server contains “Apache”

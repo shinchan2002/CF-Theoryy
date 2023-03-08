@@ -1,0 +1,47 @@
+Capturing and analyzing network packets using Wireshark (Fundamentals) : 
+
+Wireshark is a network packet analyzer. A network packet analyzer presents captured packet data in as much detail as possible.
+You could think of a network packet analyzer as a measuring device for examining what’s happening inside a network cable, just like an electrician uses a voltmeter for examining what’s happening inside an electric cable (but at a higher level, of course).
+In the past, such tools were either very expensive, proprietary, or both. However, with the advent of Wireshark, that has changed. Wireshark is available for free, is open source, and is one of the best packet analyzers available today.
+
+ Use of  Wireshark:
+•	Network administrators use it to troubleshoot network problems
+•	Network security engineers use it to examine security problems
+•	QA engineers use it to verify network applications
+•	Developers use it to debug protocol implementations
+•	People use it to learn network protocol internals
+Features
+
+The following are some of the many features Wireshark provides:
+•	Available for UNIX and Windows.
+•	Capture live packet data from a network interface.
+•	Open files containing packet data captured with tcpdump/WinDump, Wireshark, and many other packet capture programs.
+•	Import packets from text files containing hex dumps of packet data.
+•	Display packets with very detailed protocol information.
+•	Save packet data captured.
+•	Export some or all packets in a number of capture file formats.
+•	Filter packets on many criteria.
+•	Search for packets on many criteria.
+•	Colorize packet display based on filters.
+
+Capturing Packets
+Capture traffic on your wireless network, click your wireless interface.
+You can configure advanced features by clicking Capture > Options, but this isn’t necessary for now.
+
+As soon as you single-click on your network interface’s name, you can see how the packets are working in real time. Wireshark will capture all the packets going in and out of our systems.
+Promiscuous mode is the mode in which you can see all the packets from other systems on the network and not only the packets send or received from your network adapter. Promiscuous mode is enabled by default. To check if this mode is enabled, go to Capture and Select Options. Under this window check, if the checkbox is selected and activated at the bottom of the window. The checkbox says “Enable promiscuous mode on all interfaces”.
+
+The red box button “STOP” on the top left side of the window can be clicked to stop the capturing of traffic on the network.
+
+Color Coding
+Different packets are seen highlighted in various different colors. This is Wireshark’s way of displaying traffic to help you easily identify the types of it. Default colors are:
+•	Light Purple color for TCP traffic
+•	Light Blue color for UDP traffic
+•	Black color identifies packets with errors – example these packets are delivered in an unordered manner.
+To check the color coding rules click on View and select Coloring Rules. These color coding rules can be customized and modified to fit your needs.
+ 
+
+Analyze the captured Packets:
+First of all, click on a packet and select it. Now, you can scroll down to view all its details.
+ 
+Filters can also be created from here. Right-click on one of any details. From the menu select Apply as Filter drop-down menu so filter based on it can be created.

@@ -1,0 +1,19 @@
+Web Browser Forensics
+
+-	Web Browser working
+-	Forensics activities on browser
+-	Cache / Cookies analysis
+Last Internet activity
+Click on start  BrowserHistoryExaminer  It will show following window 
+
+Click on File  Capture History
+ 
+It will show following window
+ 
+Choose History from Computer and Click on Next. T will show following tab
+Then click on Capture. It will show first 25 activities
+
+Then one by one you can see
+-	Forensics activities on browser
+-	Cache / Cookies analysis
+And also you can save this information in form of repor

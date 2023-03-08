@@ -1,0 +1,53 @@
+Recovering and Inspecting deleted files:
+
+Among the most fundamental skills necessary for a forensic investigator, recovering deleted files is probably the most basic. Files that are "deleted" remain on the storage medium until overwritten. Deleting these file simply makes the cluster available to be overwritten. This means that if the suspect deleted evidence files, until they are overwritten by the file system, they remain available to us to recover.
+ 
+In this practical we are using Autopsy software.
+After installing Autopsy then starting it, you will be greeted with a screen 
+ 
+•	Click "Create New Case". 
+•	When you do, you will greeted by a new window asking you to name your new case and what directory you want to place your cases. Enter case and put it in the base directory of C:\Cases.
+•	Now, hit Next.
+•	This will open another window asking you for a case number and the examiner name. 
+•	Click "Finish".
+•	Next, click on "Add New Data in the upper left corner. When you do, a "Add Data Source" window will open. Since we will be using the image file created in the previous module, select "Image File" and then Browse for the image file you created 
+
+•	After adding the image click next and Autopsy will begin to do its analysis of the image. 
+•	Click "Finish".
+•	If we expand the "File Types" in the object explorer, Autopsy will display all the file types and the number of files in each category. Below you can see I clicked on the "Images" file type and Autopsy will display all the Image files.
+•	When we click on a deleted file, we can do some analysis in the lower right window. There you will see tabs labeled, Hex, Strings, File Metadata, Results and Indexed Text. It will display the file's metadata including the name, type, size, modified, accessed and created (MAC).
+•	Now, to recover the deleted file,right click on the deleted file and select "Export".
+•	Go ahead and save the deleted file into the Export sub-directory.
+ 
+•	To find the exported/deleted file, navigate to Export folder.
+
+
+•	You can now double click on that file to open it in the appropriate application.
+
+
+1.	Delete the File from the Drive.
+
+2.	Open the Drive with Encase.
+
+3.	The deleted File has a red Circle with a line through it. This depicts a deleted file in Encase.
+
+4.	The window below shows the content.
+
+5.	To recover the file right click on the file and select “Copy/Unerase.
+
+6.	Write the location the file will be copied out to:
+
+7.	The indicator should show how long the file will take to copy out.
+The time wil depend on the size of the file being copied out, the speed of the connection to the source and to the destination.
+8.	Once the extraction is completed Encase will confirm this and any errors.
+
+9.	Once the copyout has been  completed, navigate to the folder where it was extracted to and view the file.
+
+
+
+
+
+
+
+
+
