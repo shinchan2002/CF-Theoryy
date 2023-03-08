@@ -1,4 +1,11 @@
 AIM - Email Forensics.
+Email forensics is the study of source and content of email as evidence to identify the actual sender and recipient of a message along with some other information such as date/time of transmission and intention of sender. It involves investigating metadata, port scanning as well as keyword searching.
+Some of the common techniques which can be used for email forensic investigation are
+•	Header Analysis
+•	Server investigation
+•	Network Device Investigation
+•	Sender Mailer Fingerprints
+•	Software Embedded Identifiers
 
 9.1 Mail Service Providers -
 
@@ -31,3 +38,10 @@ Copy the text on the page. And Open the Message header tool. -
 -> “https://toolbox.googleapps.com/apps/messageheader/”
 -> And Paste Email Header.
 -> Click Analyze the header Above
+
+
+Server Investigation
+This involves investigating copies of delivered emails and server logs. In some organizations they do provide separate email boxes for their employees by having internal mail servers. In this case, investigation involves the extraction of the entire email box related to the case and the server logs.
+
+Network Device Investigation
+In some investigations, the investigator requires the logs maintained by the network devices such as routers, firewalls and switches to investigate the source of an email message.  This is often a complex situation where the primary evidence is not percent (when the ISP or proxy does not maintain logs or lacks operation by ISP 
