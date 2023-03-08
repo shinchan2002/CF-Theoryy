@@ -1,4 +1,15 @@
 AIM - Forensics Case Study
+Autopsy was designed to be an end-to-end platform with modules that come with it out of the box and others that are available from third-parties. Some of the modules provide:
+•	Timeline Analysis - Advanced graphical event viewing interface (video tutorial included).
+•	Hash Filtering - Flag known bad files and ignore known good.
+•	Keyword Search - Indexed keyword search to find files that mention relevant terms.
+•	Web Artifacts - Extract history, bookmarks, and cookies from Firefox, Chrome, and IE.
+•	Data Carving - Recover deleted files from unallocated space using PhotoRec
+•	Multimedia - Extract EXIF from pictures and watch videos.
+•	Indicators of Compromise - Scan a computer using STIX.
+Autopsy runs background tasks in parallel using multiple cores and provides results to you as soon as they are found. It may take hours to fully search the drive, but you will know in minutes if your keywords were found in the user's home folder.
+Autopsy is free. As budgets are decreasing, cost effective digital forensics solutions are essential. Autopsy offers the same core features as other digital forensics tools and offers other essential features, such as web artifact analysis and registry analysis, that other commercial tools do not provide.
+
  -> Solve the Case Study (image file) provided in the
 lab using Encase Investigator or Autopsy.
 1. Autopsy is a web based front end to the FSK. Start it and create a new case.
